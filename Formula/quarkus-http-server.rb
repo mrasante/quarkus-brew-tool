@@ -23,7 +23,7 @@ class QuarkusHttpServer < Formula
       exec java -jar quarkus-run.jar "$@"
     EOF
     
-    chmod +x bin/"quarkus-http-server"
+    chmod 0755, bin/"quarkus-http-server"
   end
 
   service do
